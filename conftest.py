@@ -1,6 +1,6 @@
 
-import pytest
 
-@pytest.fixture(scope="session")
-def test_data():
-    return None
+pytest_plugins = (
+    "fixtures.browsers",  # Укажите имя файла, где лежит chromium_page
+    "fixtures.pages",
+)
